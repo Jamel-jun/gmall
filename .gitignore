@@ -1,5 +1,9 @@
 .idea/
 target/
+consumer/
+provider/
+mvnw*
+.mvn/
 
 # Compiled class file
 *.class

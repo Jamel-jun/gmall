@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: pms-service
+
+  cloud: #start
+    nacos:
+      config:
+        namespace: 3956a090-38c6-4e45-bfbe-59707a282bd8 # 指定该服务从nacos配置中心读取配置文件的命名空间（在哪个命名空间里面读取）
+        server-addr: 112.124.14.66:8848   # 将该服务的配置文件用nacos作配置中心统一管理
+        group: dev  # 指定读取哪个组的配置文件
+        file-extension: yaml
+
